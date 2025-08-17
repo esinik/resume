@@ -44,7 +44,7 @@ jobs:
           git config --global user.name "${{ github.actor }}"
 
           # Clone the target repository using PAT
-          git clone https://${{ github.actor }}:${PAT_TOKEN}@github.com/esinik/esinik.git
+          git clone https://${GITHUB_TOKEN}@github.com/esinik/esinik.git
           cd resume
 
           # Create public folder if it doesn't exist
@@ -56,4 +56,4 @@ jobs:
           # Commit and push to target repository
           git add public/Ertan_Sinik_Resume.pdf
           git commit -m "docs: update resume from automated build" || echo "No changes to commit"
-          git push https://${{ github.actor }}:${PAT_TOKEN}@github.com/esinik/esinik.git master
+          git push https://${GITHUB_TOKEN}@github.com/esinik/esinik.git master

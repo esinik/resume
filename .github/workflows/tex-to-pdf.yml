@@ -85,7 +85,7 @@ jobs:
 
       - name: Commit and push PDF TR V2
         run: |
-          git add Ertan_Sinik_Resume_TR_Long.pdf
+          git add Ertan_Sinik_Resume_Long_TR.pdf
           git commit -m "docs: update resume in TR Long" || echo "No changes to commit in TR"
           git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
 

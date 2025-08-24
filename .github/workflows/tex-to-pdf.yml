@@ -67,3 +67,25 @@ jobs:
       #    git commit -m "docs: update resume in TR V2" || echo "No changes to commit in TR"
       #    git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
 
+
+######################################
+      - name: Compile LaTeX to PDF Long
+        run: |
+          xelatex -jobname=Ertan_Sinik_Resume_Long ertan_sinik_cv_en.tex
+
+      - name: Commit and push PDF V2 Long
+        run: |
+          git add Ertan_Sinik_Resume_Long.pdf
+          git commit -m "docs: update resume Long" || echo "No changes to commit"
+          git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
+
+      - name: Compile LaTeX to PDF (TR) Long
+        run: |
+          xelatex -jobname=Ertan_Sinik_Resume_Long_TR ertan_sinik_cv_tr.tex
+
+      - name: Commit and push PDF TR V2
+        run: |
+          git add Ertan_Sinik_Resume_TR_Long.pdf
+          git commit -m "docs: update resume in TR Long" || echo "No changes to commit in TR"
+          git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
+

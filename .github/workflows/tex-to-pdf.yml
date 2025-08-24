@@ -47,24 +47,23 @@ jobs:
           git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
 
       ######################################
-      - name: Compile LaTeX to PDF V2
-        run: |
-          xelatex -jobname=Ertan_Sinik_Resume_V2 resume_xelatex.tex
+      #- name: Compile LaTeX to PDF V2
+      #  run: |
+      #    xelatex -jobname=Ertan_Sinik_Resume_V2 resume_xelatex.tex
 
-      - name: Commit and push PDF V2
-        run: |
-          git add Ertan_Sinik_Resume_V2.pdf
-          git commit -m "docs: update resume" || echo "No changes to commit"
-          git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
+      #- name: Commit and push PDF V2
+      #  run: |
+      #    git add Ertan_Sinik_Resume_V2.pdf
+      #    git commit -m "docs: update resume" || echo "No changes to commit"
+      #    git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
 
-      - name: Compile LaTeX to PDF (TR) V2
-        run: |
-          xelatex -jobname=Ertan_Sinik_Resume_TR_V2 resume_xelatex_tr.tex
+      #- name: Compile LaTeX to PDF (TR) V2
+      #  run: |
+      #    xelatex -jobname=Ertan_Sinik_Resume_TR_V2 resume_xelatex_tr.tex
 
-      - name: Commit and push PDF TR V2
-        run: |
-          git add Ertan_Sinik_Resume_TR_V2.pdf
-          git commit -m "docs: update resume in TR V2" || echo "No changes to commit in TR"
-          git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
+      #- name: Commit and push PDF TR V2
+      #  run: |
+      #    git add Ertan_Sinik_Resume_TR_V2.pdf
+      #    git commit -m "docs: update resume in TR V2" || echo "No changes to commit in TR"
+      #    git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
 
-      

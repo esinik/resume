@@ -1,0 +1,68 @@
+\documentclass[10pt,a4paper]{extarticle}
+\pagenumbering{gobble}
+\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\titleformat{\section}{\large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+\begin{document}
+\begin{center}
+    \begin{minipage}{\textwidth}
+        \centering
+        {\LARGE\textbf{Ertan Şinik}} \hspace{2pt} {\LARGE{Kıdemli Mobil Geliştirici}}\\[10pt]
+        \href{mailto:ertansinik@gmail.com}{ertansinik@gmail.com} \textbullet\
+        \href{https://linkedin.com/in/sinikertan}{linkedin.com/in/sinikertan} \textbullet\
+        \href{https://github.com/esinik}{github.com/esinik}
+    \end{minipage}
+\end{center}
+\section{Özet}
+14+ yıllık deneyime sahip Kıdemli Mobil Geliştirici olarak iOS, Android ve Flutter için yüksek performanslı uygulamalar tasarlıyor ve geliştiriyorum. Gerçek zamanlı iletişim, çevrimdışı veri yönetimi ve bulut servisleri gibi modern teknolojilerden yararlanarak ölçeklenebilir, sürdürülebilir ve kullanıcı odaklı çözümler üretiyorum. Liderlik becerilerim ile teknik uzmanlığımı birleştirerek ekipleri yönlendiriyor, iş değeri sağlayan ve kullanıcıları ilham veren sezgisel ürünler ortaya koyuyorum. Sürekli öğrenmeye duyduğum tutku sayesinde modern, sürdürülebilir ve etkili çözümler üretmeye odaklanıyorum.
+\section{Deneyim}
+\textbf{\href{https://inity.com.tr}{Inity} \textit{(İstanbul, Türkiye)}} \hfill Hibrit\\
+\textit{Mobil Takım Lideri} \hfill Ocak 2025 -- Günümüz\\
+\textit{Kıdemli Yazılım Geliştirici} \hfill Mayıs 2022 -- Aralık 2024
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item iOS, Android ve Flutter projelerinde Mobil Geliştirme Ekibini yönettim.
+	\item Ölçeklenebilir ve çok platformlu mobil uygulamalar (Flutter, iOS, Android) tasarladım ve sürdürdüm.
+	\item Mimari kararlar aldım, kod standartlarını belirledim ve CI/CD süreçlerini optimize ettim.
+	\item Drift, SQLite ve Isar kullanarak offline-first çözümler geliştirdim.
+	\item REST API’ler, WebSocket’ler ve gerçek zamanlı iletişim özelliklerini (SignalR) entegre ettim.
+	\item Modern durum yönetimine ve modüler mimarilere geçişi yönlendirdim.
+	\item Gelişmiş loglama ve hata takip sistemleriyle uygulama performansını, kararlılığını ve güvenliğini iyileştirdim.
+	\item Kod incelemeleri, pair programming ve en iyi pratiklerin paylaşımıyla geliştiricilere mentorluk yaptım.
+	\item Ürün ekipleri, paydaşlar ve müşterilerle iş hedeflerini teknik uygulama ile uyumlu hale getirmek için iş birliği yaptım.
+    \item Önemli projelerde proje yöneticisi ve teknik sahip olarak görev aldım, zamanında ve başarılı teslimatı sağladım.
+\end{itemize}
+\textbf{\href{https://www.terrabilgiisilem}{Terra Bilgi İşlem} \textit{(İstanbul, Türkiye)}} \hfill İstanbul, Türkiye\\
+\textit{Yazılım Mühendisi} \hfill Ekim 2011 -- Mayıs 2022
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item iOS, Android ve masaüstü için eğitim platformları ve mobil uygulamalar geliştirdim ve ölçeklendirdim.
+	\item Birden fazla büyük ölçekli eğitim uygulamasında (TEA ekosistemi) proje lideri olarak görev yaptım.
+	\item iOS/macOS uygulamalarını backend sistemleri (JSP, Java, Node.js) ile entegre eden çözümler geliştirdim.
+	\item Okullar, üniversiteler ve kurumsal müşteriler için güvenli ve kullanıcı dostu uygulamalar sundum.
+	\item Uzun soluklu projelerde sürdürülebilirlik ve ölçeklenebilirliği sağladım.
+\end{itemize}
+\section{Yetenekler}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+	\item \textbf{Diller ve Platformlar}: Dart, Kotlin, Swift, SwiftUI, Java, Objective-C
+	\item \textbf{Mobil Geliştirme}: 
+ 	\item \textbf{- iOS}: MVC, MVVM, MVP, VIPER
+  	\item \textbf{- Android}: MVC, MVVM
+  	\item \textbf{- Flutter}: Riverpod, Provider, VIPER
+	\item \textbf{Ağ ve İletişim}: REST API, WebSocket, SignalR, Dio, Retrofit
+	\item \textbf{Veritabanları}: Drift, Room, SQLite, Hive
+	\item \textbf{Backend}: Node.js (Express), MongoDB, JSP
+	\item \textbf{Build ve Bağımlılık Yönetimi}: Gradle, CocoaPods, SPM, npm
+	\item \textbf{Hata Takibi ve Loglama}: Sentry, Yerel Loglama, Clasrity
+	\item \textbf{Tasarım Kalıpları}: MVC, MVVM, MVP, VIPER, Singleton, Factory
+	\item \textbf{Mimari Yaklaşımlar}: Clean Architecture, Feature-Based, Monolithic
+	\item \textbf{Versiyon Kontrol}: GitHub, GitLab, Azure
+\end{itemize}
+\section{Eğitim}
+\textbf{Eskişehir Anadolu Üniversitesi} \hfill Eskişehir, Türkiye\\
+\textit{İşletme} \hfill Eylül 2013 -- Haziran 2021\\
+\textbf{Ankara Üniversitesi} \hfill Ankara, Türkiye\\
+\textit{Bilgisayar Mühendisliği Lisans} \hfill Eylül 2004 -- Haziran 2009\\
+\end{document}

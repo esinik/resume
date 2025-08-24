@@ -1,0 +1,143 @@
+
+% !TEX TS-program = xelatex
+\documentclass[11pt,a4paper]{extarticle}
+
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{turkish}
+\setotherlanguage{english}
+
+% --- Fonts ---
+% Uses fonts that ship with TeX Live to avoid missing-font issues.
+% If you prefer Roboto: \setmainfont{Roboto} (requires system install)
+\setmainfont{TeX Gyre Heros} % Helvetica-like, clean and light
+\setsansfont{TeX Gyre Heros}
+\setmonofont{DejaVu Sans Mono}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black
+}
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{0A84FF}
+
+\usepackage{enumitem}
+\setlist{noitemsep, topsep=3pt, leftmargin=12pt}
+
+\usepackage{tabularx}
+\usepackage{array}
+\newcolumntype{L}{>{\raggedright\arraybackslash}p{0.24\textwidth}}
+\newcolumntype{R}{>{\raggedright\arraybackslash}p{0.72\textwidth}}
+
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\pagestyle{empty}
+
+% --- Helpers ---
+\newcommand{\nameline}[1]{\noindent{\LARGE\bfseries #1}\par\vspace{2pt}\hrule\vspace{8pt}}
+\newcommand{\row}[2]{\noindent\begin{tabularx}{\linewidth}{L R}\textbf{#1} & #2\end{tabularx}\par}
+\newcommand{\twocol}[2]{\noindent\begin{tabularx}{\linewidth}{@{}X@{} X@{}}\raggedright #1 & \raggedleft #2\end{tabularx}\par}
+
+\begin{document}
+
+\nameline{Ertan Şinik}
+
+\twocol{%
+  \textbf{Kıdemli Mobil Geliştirici \& Takım Lideri}%
+}{%
+  \href{mailto:ertansinik@gmail.com}{ertansinik@gmail.com}\, | \, 0(555) 461\,52\,58%
+}
+
+\vspace{4pt}
+\twocol{%
+  Beştelsiz Mah. Dr. Sadık Ahmet Sk. Apt. 7-9 No:7, Zeytinburnu, İstanbul%
+}{%
+  \href{https://github.com/ertansinik}{github.com/ertansinik} \, | \, \href{https://bersoftware.com}{bersoftware.com}%
+}
+
+% ------------------------------
+\section{Özet}
+12+ yıllık deneyime sahip kıdemli mobil geliştirici. iOS, Android ve Flutter'da uçtan uca ürün geliştirme, ekip liderliği, gerçek zamanlı iletişim, offline-first mimariler ve yüksek performanslı yerel veritabanları (Drift/Room/SQLite) üzerine uzmanlık. Temiz kod, sürdürülebilir mimari ve performans odaklı geliştirme prensiplerini benimser.
+
+% ------------------------------
+\section{Deneyim}
+\row{2025 -- Günümüz}{\textbf{Inity Yazılım Teknolojileri A.Ş.} — \emph{Mobil Geliştirme Takım Lideri}}
+\row{2022 -- 2024}{\textbf{Inity Yazılım Teknolojileri A.Ş.} — \emph{Kıdemli Yazılım Geliştirme Uzmanı}}
+\row{2011 -- 2022}{\textbf{Terra Bilgi İşlem} — \emph{Yazılım Mühendisi (iOS/Mac, Java, Backend)}}
+\row{2008 (Yaz)}{\textbf{Finsoft Yazılım} — \emph{Stajyer}}
+\row{2007 (Yaz)}{\textbf{Hidroregjioni Jugor} — \emph{Stajyer}}
+
+% ------------------------------
+\section{Seçili Projeler}
+\row{2025 -- Günümüz}{\textbf{TEA Tablet Uygulaması} — Proje Sorumlusu, Flutter Geliştirici}
+\row{2025 -- Günümüz}{\textbf{CRC Mobile App (Tedarikçi \& Müşteri)} — Flutter Geliştirici}
+\row{2024 -- Günümüz}{\textbf{DepOrtak} — Proje Sorumlusu, iOS \& Android Geliştirici}
+\row{2024 -- Günümüz}{\textbf{TIRPORT — YükCEPte (V1, Kurumsal)} — iOS/Android Geliştirici, Proje Sorumlusu}
+\row{2023 -- Günümüz}{\textbf{Noti Mobil} — Flutter Geliştirici}
+\row{2023 -- 2024}{\textbf{Yılport Infinity Mobile — Online İşlemler} — Proje Yöneticisi, Flutter Geliştirici}
+\row{2023 -- 2024}{\textbf{Puan Harca} — Mobil Uygulama Bugfix \& Geliştirme (iOS/Android), Proje Sorumlusu}
+\row{2023 -- 2024}{\textbf{Doğadan} — Bugfix \& Geliştirme (\textit{Classic ASP})}
+\row{2022 -- 2023}{\textbf{AXA Fast} — Hasar Tespit Modülü Entegrasyonu, Proje Sorumlusu (Flutter)}
+\row{2022 -- 2025}{\textbf{Technohouse Kurum İçi Takvim} — Backend (Node.js/Express/MongoDB/Python) \& Mobil}
+\row{2022 -- 2024}{\textbf{Erkan Ulu — Portal (Ulu Mobil)} — Proje Yöneticisi, Flutter Geliştirici}
+\row{2021 -- Günümüz}{\textbf{Capital Accounting Mobile} — iOS/Android Geliştirici}
+\row{2020 -- Günümüz}{\textbf{AXA iClaim} — Fotoğraftan Hasar Tespit (Proje Yöneticisi)}
+\row{2020 -- 2023}{\textbf{SGRT Sigorta} — Tamamlayıcı Sağlık Sigortası (iOS/Android), Proje Yöneticisi}
+\row{2020 -- 2021}{\textbf{Kriptik App} — Kripto Fiyat Listeleme (Flutter, Android sürümü)}
+\row{2020 -- 2021}{\textbf{IMC — Edirne Belediyesi} — Proje Yöneticisi}
+\row{2019 -- 2023}{\textbf{ARI Okulları — TEA Ödev} — Web \& Desktop \& Backend, Proje Yöneticisi, Desktop Geliştirici}
+\row{2019 -- 2020}{\textbf{Eyüboğlu Görev Yönetim Sistemi (İç Ağ)} — Proje Yöneticisi, iOS \& Backend Geliştirici}
+\row{2019 -- 2022}{\textbf{Eyüboğlu EYS} — iOS Mobil (Danışmanlık)}
+\row{2018 -- 2022}{\textbf{BilardoComTr} — iOS/Android (Yayında), Proje Yöneticisi}
+\row{2017 -- 2020}{\textbf{Guzella} — iOS \& Android, Proje Yöneticisi}
+\row{2017 -- 2018}{\textbf{Düğün.com} — iOS, Proje Yöneticisi \& iOS Geliştirici}
+\row{2013 -- 2016}{\textbf{TEA Ekosistemi} — Teknik Danışman}
+\row{2016}{\textbf{TEA-cher \& TEA-inClass (iOS)} — Proje Yöneticisi \& Geliştirici}
+\row{2015}{\textbf{TEA Reports Mobile (iOS)} — Geliştirici}
+\row{2013}{\textbf{TEA Homework Modülü} — Proje Yöneticisi \& Geliştirici}
+\row{2012}{\textbf{Okyanus Koleji — Okyanus Interaktif (iOS Tablet)} — iOS Geliştirici}
+\row{2012}{\textbf{Üsküdar Amerikan Koleji — OBS (iOS/Android)} — Mobil Geliştirici}
+\row{2012}{\textbf{Erkan Ulu Okulları — Ödev Kontrol (iOS)} — iOS Geliştirici}
+\row{2012}{\textbf{Doğa Koleji — OBS (iOS)} — iOS Geliştirici}
+\row{2011 -- 2025}{\textbf{TEA (Terra Educational Applications)} — Proje Sorumlusu; TEA-inClass, TEA-Mobile, TEA-Reports, TEA-Server (iOS/MacOS, JSP Backend, Java Desktop)}
+
+% ------------------------------
+\section{Teknoloji Seti}
+\textbf{Diller \& Platformlar:} Dart, Kotlin, Swift, SwiftUI, Java, Objective-C \\
+\textbf{Mobil:} iOS (MVC, MVVM, MVP, VIPER), Android (MVC, MVVM), Flutter (Riverpod, Provider, VIPER) \\
+\textbf{Ağ \& İletişim:} REST API, WebSocket, SignalR, Dio, Retrofit \\
+\textbf{Veritabanı:} Drift, Room, SQLite, Hive \\
+\textbf{Backend:} Node.js (Express), MongoDB, JSP \\
+\textbf{Araçlar:} Gradle, CocoaPods, SPM, npm; Hata Takibi: Sentry, Firebase Crashlytics, Lokal Loglama \\
+\textbf{Mimari \& Desenler:} Clean Architecture, Özellik Bazlı Mimari; MVC, MVVM, MVP, Singleton, Factory \\
+\textbf{Sürüm Yönetimi:} GitHub, GitLab, Azure
+
+% ------------------------------
+\section{Eğitim}
+\row{2021 -- Günümüz}{\textbf{Anadolu Üniversitesi}, AÖF — \emph{Sosyoloji}}
+\row{2013 -- 2021}{\textbf{Anadolu Üniversitesi}, AÖF — \emph{İşletme}}
+\row{2004 -- 2009}{\textbf{Ankara Üniversitesi}, Mühendislik Fakültesi — \emph{Bilgisayar Mühendisliği}}
+\row{2000 -- 2004}{\textbf{Gjon Buzuku Fen Lisesi}, Prizren/Kosova}
+
+% ------------------------------
+\section{Kişisel}
+\row{Ad Soyad}{Ertan Şinik}
+\row{Doğum}{12.07.1986 — Prizren/Kosova}
+\row{Medeni Durum}{Bekâr}
+\row{Ehliyet}{B Sınıfı}
+
+% ------------------------------
+\section{Yabancı Diller}
+\row{İngilizce}{Yazma: Çok İyi \quad Konuşma: İyi}
+\row{Arnavutça}{Yazma: İyi \quad Konuşma: Başlangıç}
+\row{Sırpça}{Yazma: İyi \quad Konuşma: Başlangıç}
+
+\vfill
+\small{Güncelleme: \today}
+
+\end{document}

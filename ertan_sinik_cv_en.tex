@@ -1,0 +1,141 @@
+
+% !TEX TS-program = xelatex
+\documentclass[11pt,a4paper]{extarticle}
+
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{turkish}
+
+% --- Fonts ---
+\setmainfont{TeX Gyre Heros} % Helvetica-like
+\setsansfont{TeX Gyre Heros}
+\setmonofont{DejaVu Sans Mono}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black
+}
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{0A84FF}
+
+\usepackage{enumitem}
+\setlist{noitemsep, topsep=3pt, leftmargin=12pt}
+
+\usepackage{tabularx}
+\usepackage{array}
+\newcolumntype{L}{>{\raggedright\arraybackslash}p{0.24\textwidth}}
+\newcolumntype{R}{>{\raggedright\arraybackslash}p{0.72\textwidth}}
+
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\pagestyle{empty}
+
+% --- Helpers ---
+\newcommand{\nameline}[1]{\noindent{\LARGE\bfseries #1}\par\vspace{2pt}\hrule\vspace{8pt}}
+\newcommand{\row}[2]{\noindent\begin{tabularx}{\linewidth}{L R}\textbf{#1} & #2\end{tabularx}\par}
+\newcommand{\twocol}[2]{\noindent\begin{tabularx}{\linewidth}{@{}X@{} X@{}}\raggedright #1 & \raggedleft #2\end{tabularx}\par}
+
+\begin{document}
+
+\nameline{Ertan Şinik}
+
+\twocol{%
+  \textbf{Senior Mobile Developer \& Team Lead}%
+}{%
+  \href{mailto:ertansinik@gmail.com}{ertansinik@gmail.com}\, | \, +90 (555) 461\,52\,58%
+}
+
+\vspace{4pt}
+\twocol{%
+  Beştelsiz Mah. Dr. Sadık Ahmet Sk. Apt. 7-9 No:7, Zeytinburnu, İstanbul%
+}{%
+  \href{https://github.com/ertansinik}{github.com/ertansinik} \, | \, \href{https://bersoftware.com}{bersoftware.com}%
+}
+
+% ------------------------------
+\section{Summary}
+Senior mobile developer with 12+ years of experience. Specialized in end-to-end product development across iOS, Android, and Flutter. Strong expertise in real-time communication, offline-first architectures, and high-performance local databases (Drift/Room/SQLite). Focused on clean code, sustainable architectures, and performance-oriented development.
+
+% ------------------------------
+\section{Experience}
+\row{2025 -- Present}{\textbf{Inity Software Technologies Inc.} — \emph{Mobile Development Team Lead}}
+\row{2022 -- 2024}{\textbf{Inity Software Technologies Inc.} — \emph{Senior Software Development Specialist}}
+\row{2011 -- 2022}{\textbf{Terra Bilgi İşlem} — \emph{Software Engineer (iOS/Mac, Java, Backend)}}
+\row{2008 (Internship)}{\textbf{Finsoft Software} — \emph{Intern}}
+\row{2007 (Internship)}{\textbf{Hidroregjioni Jugor} — \emph{Intern}}
+
+% ------------------------------
+\section{Selected Projects}
+\row{2025 -- Present}{\textbf{TEA Tablet Application} — Project Lead, Flutter Developer}
+\row{2025 -- Present}{\textbf{CRC Mobile App (Supplier \& Customer)} — Flutter Developer}
+\row{2024 -- Present}{\textbf{DepOrtak} — Project Lead, iOS \& Android Developer}
+\row{2024 -- Present}{\textbf{TIRPORT — YukCEPte (V1, Corporate)} — iOS/Android Developer, Project Lead}
+\row{2023 -- Present}{\textbf{Noti Mobile} — Flutter Developer}
+\row{2023 -- 2024}{\textbf{Yılport Infinity Mobile — Online Transactions} — Project Manager, Flutter Developer}
+\row{2023 -- 2024}{\textbf{Puan Harca} — Mobile App Bugfix \& Development (iOS/Android), Project Lead}
+\row{2023 -- 2024}{\textbf{Doğadan} — Bugfix \& Development (\textit{Classic ASP})}
+\row{2022 -- 2023}{\textbf{AXA Fast} — Damage Assessment Module Integration, Project Lead (Flutter)}
+\row{2022 -- 2025}{\textbf{Technohouse Internal Calendar} — Backend (Node.js/Express/MongoDB/Python) \& Mobile}
+\row{2022 -- 2024}{\textbf{Erkan Ulu — Portal (Ulu Mobile)} — Project Manager, Flutter Developer}
+\row{2021 -- Present}{\textbf{Capital Accounting Mobile} — iOS/Android Developer}
+\row{2020 -- Present}{\textbf{AXA iClaim} — Photo Damage Detection (Project Manager)}
+\row{2020 -- 2023}{\textbf{SGRT Insurance} — Complementary Health Insurance (iOS/Android), Project Manager}
+\row{2020 -- 2021}{\textbf{Kriptik App} — Cryptocurrency Price Listing (Flutter, Android version)}
+\row{2020 -- 2021}{\textbf{IMC — Edirne Municipality} — Project Manager}
+\row{2019 -- 2023}{\textbf{ARI Schools — TEA Homework} — Web \& Desktop \& Backend, Project Manager, Desktop Developer}
+\row{2019 -- 2020}{\textbf{Eyüboğlu Task Management System (Intranet)} — Project Manager, iOS \& Backend Developer}
+\row{2019 -- 2022}{\textbf{Eyüboğlu EYS} — iOS Mobile (Consultancy)}
+\row{2018 -- 2022}{\textbf{BilardoComTr} — iOS/Android (Published), Project Manager}
+\row{2017 -- 2020}{\textbf{Guzella} — iOS \& Android, Project Manager}
+\row{2017 -- 2018}{\textbf{Düğün.com} — iOS, Project Manager \& iOS Developer}
+\row{2013 -- 2016}{\textbf{TEA Ecosystem} — Technical Consultant}
+\row{2016}{\textbf{TEA-cher \& TEA-inClass (iOS)} — Project Manager \& Developer}
+\row{2015}{\textbf{TEA Reports Mobile (iOS)} — Developer}
+\row{2013}{\textbf{TEA Homework Module} — Project Manager \& Developer}
+\row{2012}{\textbf{Okyanus College — Okyanus Interactive (iOS Tablet)} — iOS Developer}
+\row{2012}{\textbf{Üsküdar American College — OBS (iOS/Android)} — Mobile Developer}
+\row{2012}{\textbf{Erkan Ulu Schools — Homework Control (iOS)} — iOS Developer}
+\row{2012}{\textbf{Doğa College — OBS (iOS)} — iOS Developer}
+\row{2011 -- 2025}{\textbf{TEA (Terra Educational Applications)} — Project Lead; TEA-inClass, TEA-Mobile, TEA-Reports, TEA-Server (iOS/MacOS, JSP Backend, Java Desktop)}
+
+% ------------------------------
+\section{Tech Stack}
+\textbf{Languages \& Platforms:} Dart, Kotlin, Swift, SwiftUI, Java, Objective-C \\
+\textbf{Mobile:} iOS (MVC, MVVM, MVP, VIPER), Android (MVC, MVVM), Flutter (Riverpod, Provider, VIPER) \\
+\textbf{Networking:} REST API, WebSocket, SignalR, Dio, Retrofit \\
+\textbf{Database:} Drift, Room, SQLite, Hive \\
+\textbf{Backend:} Node.js (Express), MongoDB, JSP \\
+\textbf{Tools:} Gradle, CocoaPods, SPM, npm; Error Tracking: Sentry, Firebase Crashlytics, Local Logging \\
+\textbf{Architecture \& Patterns:} Clean Architecture, Feature-Based Architecture; MVC, MVVM, MVP, Singleton, Factory \\
+\textbf{Version Control:} GitHub, GitLab, Azure
+
+% ------------------------------
+\section{Education}
+\row{2021 -- Present}{\textbf{Anadolu University}, Open Education Faculty — \emph{Sociology}}
+\row{2013 -- 2021}{\textbf{Anadolu University}, Open Education Faculty — \emph{Business Administration}}
+\row{2004 -- 2009}{\textbf{Ankara University}, Faculty of Engineering — \emph{Computer Engineering}}
+\row{2000 -- 2004}{\textbf{Gjon Buzuku Science High School}, Prizren/Kosovo}
+
+% ------------------------------
+\section{Personal}
+\row{Name}{Ertan Şinik}
+\row{Birth}{12.07.1986 — Prizren/Kosovo}
+\row{Marital Status}{Single}
+\row{Driving License}{Class B}
+
+% ------------------------------
+\section{Languages}
+\row{English}{Writing: Excellent \quad Speaking: Good}
+\row{Albanian}{Writing: Good \quad Speaking: Beginner}
+\row{Serbian}{Writing: Good \quad Speaking: Beginner}
+
+\vfill
+\small{Updated: \today}
+
+\end{document}

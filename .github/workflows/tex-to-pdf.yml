@@ -26,7 +26,6 @@ jobs:
       - name: Compile LaTeX to PDF
         run: |
           pdflatex -jobname=Ertan_Sinik_Resume resume.tex
-          pdflatex -jobname=Ertan_Sinik_Resume resume.tex
 
       - name: Commit and push PDF
         env:
@@ -41,14 +40,9 @@ jobs:
       - name: Compile LaTeX to PDF (TR)
         run: |
           pdflatex -jobname=Ertan_Sinik_Resume_TR resume_tr.tex
-          pdflatex -jobname=Ertan_Sinik_Resume_TR resume_tr.tex
 
       - name: Commit and push PDF TR
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
-          git config --local user.name "${{ github.actor }}"
           git add Ertan_Sinik_Resume_TR.pdf
           git commit -m "docs: update resume in TR" || echo "No changes to commit in TR"
           git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
@@ -57,14 +51,9 @@ jobs:
       - name: Compile LaTeX to PDF V2
         run: |
           xelatex -jobname=Ertan_Sinik_Resume resume_xelatex.tex
-          xelatex -jobname=Ertan_Sinik_Resume resume_xelatex.tex
 
       - name: Commit and push PDF V2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
-          git config --local user.name "${{ github.actor }}"
           git add Ertan_Sinik_Resume_V2.pdf
           git commit -m "docs: update resume" || echo "No changes to commit"
           git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
@@ -72,16 +61,11 @@ jobs:
       - name: Compile LaTeX to PDF (TR) V2
         run: |
           xelatex -jobname=Ertan_Sinik_Resume_TR_V2 resume_xelatex_tr.tex
-          xelatex -jobname=Ertan_Sinik_Resume_TR_v2 resume_xelatex_tr.tex
 
       - name: Commit and push PDF TR V2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
-          git config --local user.name "${{ github.actor }}"
           git add Ertan_Sinik_Resume_TR_V2.pdf
-          git commit -m "docs: update resume in TR" || echo "No changes to commit in TR"
+          git commit -m "docs: update resume in TR V2" || echo "No changes to commit in TR"
           git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
 
       

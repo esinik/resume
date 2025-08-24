@@ -9,11 +9,8 @@
 \setdefaultlanguage{turkish}
 \microtypesetup{expansion=false}
 \usepackage{fontspec}
-\setmainfont{Source Sans Pro}[
-  Ligatures=TeX,
-  BoldFont={Source Sans Pro Bold},
-  ItalicFont={Source Sans Pro Italic},
-]
+\usepackage{tgheros} % TeX Gyre Heros = Helvetica-like
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage[protrusion]{microtype}
 
 \titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
